@@ -89,7 +89,7 @@ Number`\t`Conservation score`\t`Composition of the site
 
 [e. g] 
 
-(画像) 
+<img width="969" alt="result_picture" src="https://user-images.githubusercontent.com/83740080/131452213-57118f5c-225d-43e0-b4a4-dfb35e6c8378.png">
 
 ## References
 
