@@ -32,7 +32,7 @@ Then the object file will be generated in `./target/debug` directory.
 ### Conservation score
 Conservation scores are calculated by using Shannon's entropy as follows: 
 
-(画像) 
+<img width="1440" alt="readme_equation_01" src="https://user-images.githubusercontent.com/83740080/131451510-3e3512df-4db0-4b05-bda2-dd7ab74d4d13.png">
 
 where *N* is the number of amino acid types ( 21 or 7 ) and *K* is the length of a site. That equation normalizes Shannon's entropy so that conserved ( low entropy ) sites score 1 and diverse ( high entropy ) sites score 0 [2]. 
 
