@@ -55,7 +55,7 @@ This program supports 2 methods of reducing sequence redundancy, Position-Based 
 
 Gap penalties are given to each conservation score by a simple method as follows: 
 
-(画像) 
+<img width="1440" alt="readme_equation_02" src="https://user-images.githubusercontent.com/83740080/131451851-78f2a63e-aa0a-4726-8a55-fc9312f9f99b.png">
 
 where *L* is the length of a site and *N* is the number of the gaps in the site. 
 
