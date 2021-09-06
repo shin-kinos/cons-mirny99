@@ -1,5 +1,6 @@
 
 use std::time::Instant;
+use colored::*;
 
 mod options;
 mod fasta;
@@ -7,6 +8,7 @@ mod weighting;
 mod gap;
 mod result;
 mod entropy;
+mod error;
 
 fn main()
 {
@@ -77,7 +79,7 @@ fn main()
 	/* Save result. */
 	result::save_result( &site_list, &shan_ent_list, &( opts.output ) );
 
-	println!( "\nProgram completed !!!\n" );
+	println!( "{}", "\nProgram completed !!!\n".green() );
 
 	/* Elapsed time : End */
 	println!( "Total elapsed time (sec) : {}.{:.3}", time.elapsed().as_secs(), time.elapsed().subsec_nanos() / 1_000_000 );

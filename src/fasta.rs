@@ -1,6 +1,6 @@
 
 use std::fs::read_to_string;
-use std::process;
+use crate::error;
 
 pub struct Fasta {
 	pub sequence : Vec<String>,
@@ -48,11 +48,11 @@ impl Fasta {
 		let num_seq   : usize = ( self.sequence ).len();
 		let num_title : usize = ( self.title ).len();
 
-		if num_seq != num_title { error_bomb( "seq_title_not_same" ) }
+		if num_seq != num_title { error::error_bomb( "seq_title_same" ); }
 
 		for i in 1 .. num_seq {
 			if ( self.sequence[ 0 ] ).len() != ( self.sequence[ i ] ).len() {
-				error_bomb( "seq_len_not_same" );
+				error::error_bomb( "seq_len_not_same" );
 			}
 		}
 
@@ -83,19 +83,4 @@ impl Fasta {
 		site_list
 	}
 
-}
-
-fn error_bomb( arg : &str )
-{
-	println!( "ERROR !!!" );
-
-	match arg {
-		"seq_title_not_same" => println!( "Inadequate format in Multi-FASTA file." ),
-		"seq_len_not_same"   => println!( "The length of each sequences must be same." ),
-		_                    => (),
-	}
-
-	println!( "\nProgram halted !!!\n" );
-
-	process::exit( 1 );
 }

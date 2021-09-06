@@ -31,9 +31,9 @@ fn gap_penalty( site : &String, weight_list : &Vec<f64> ) -> f64
 
 	/*
 	 * Normalize the gap penalty.
-	 * The more the gaps, the smaller the penalty value, calculate as follows;
+	 * The more the gaps, the smaller the penalty value, calculates as follows;
 	 * 1.0 - { (sum of weighting scores assinged to gap symbol) / (sum of weighting scores) }.
-	 * And the denominator (sum of weighting scores) MUST be 1.000.
+	 * The denominator (sum of weighting scores) MUST be 1.000.
 	*/
 	1.0 - ( gap_sum / 1.000 )
 }

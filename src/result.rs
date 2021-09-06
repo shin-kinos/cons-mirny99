@@ -1,20 +1,14 @@
 
-use std::process;
 use std::fs::File;
 use std::io::Write;
 use colored::*;
+use crate::error;
 
 pub fn show_result( site_list : &Vec<String>, shan_ent_list : &Vec<f64>, arg_c : &String )
 {
+	if ( *site_list ).len() != ( *shan_ent_list ).len() { error::error_bomb( "site_ent_len_not_same" ); }
+
 	println!( "\nResult :\n" );
-
-	if ( *site_list ).len() != ( *shan_ent_list ).len() {
-		println!( "\nERROR !!!\n" );
-		println!( "Length of ( *site_list ) != Length of ( *shan_ent_list )" );
-		println!( "\nProgram halted !!!\n" );
-
-		process::exit( 1 );
-	}
 
 	if ( *arg_c ).as_str() == "yes" {
 		println!( "Colorize :" );
