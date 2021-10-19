@@ -25,7 +25,7 @@ You can compile this program by `Cargo`. 📦🦀
 % cd cons-shannon-main
 % cargo build --release
 ``` 
-Then the object file will be generated in `./target/debug` directory.
+Then the object file will be generated in `./target/release` directory.
 
 ## Scoring method 
 
