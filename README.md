@@ -57,7 +57,7 @@ Gap penalties are given to each conservation score by a simple method as follows
 
 <img width="1440" alt="gappen_eq02" src="https://user-images.githubusercontent.com/83740080/140010780-a3ebb94f-c241-4d7d-a2bd-45e7fa7421fc.png">
 
-
+where *L* is the length of a site (or number of the sequences in MSA). The gap penalty of site *i* is given by calculating sum of weighting factors assigned to the gaps in sequence *j*. 
 
 ## Input file format 
 
