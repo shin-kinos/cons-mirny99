@@ -1,4 +1,4 @@
-# cons-shannon 
+# cons-mirny99 
 A Rust program that calculates conservation scores a site in Multiple Sequence Alignment (MSA) by normalized Shannon's entropy. 
 
 ## Description 
@@ -22,10 +22,10 @@ You can compile this program by `Cargo`. 📦🦀
 [e. g.] 
 
 ``` 
-% cd cons-shannon-main
+% cd cons-mirny99-main
 % cargo build --release
 ``` 
-Then the object file will be generated in `./target/release` directory.
+Then the object file is generated in `./target/release` directory.
 
 ## Scoring method 
 
