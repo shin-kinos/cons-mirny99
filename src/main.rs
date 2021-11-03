@@ -12,8 +12,11 @@ mod error;
 
 fn main()
 {
+	println!( "\nScoring residue conservation using Shannon’s entropy.\n" );
+	println!( "Mirny, Leonid A., and Eugene I. Shakhnovich. \"Universally conserved positions in protein folds: reading evolutionary signals about stability, folding kinetics and function.\" Journal of molecular biology 291.1 (1999): 177-196." );
+
 	/* Elapsed time : Start */
-	let time = Instant::now();
+	let start = Instant::now();
 
 	println!( "\nCalculate sequence weighting.\n" );
 
@@ -82,5 +85,6 @@ fn main()
 	println!( "{}", "\nProgram completed !!!\n".green() );
 
 	/* Elapsed time : End */
-	println!( "Total elapsed time (sec) : {}.{:.3}", time.elapsed().as_secs(), time.elapsed().subsec_nanos() / 1_000_000 );
+	let end = start.elapsed();
+	println!( "Total elapsed time : {:?}", end );
 }
