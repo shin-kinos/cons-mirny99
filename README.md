@@ -37,7 +37,7 @@ Conservation scores are calculated by using Shannon's entropy as follows:
 where *N* is the number of amino acid types ( 21 or 7 ) and *K* is the length of a site. That equation normalizes Shannon's entropy so that conserved ( low entropy ) sites score 1 and diverse ( high entropy ) sites score 0 [2]. 
 
 * *AA* = 21 types : The case that residues are not taken account of their stereochemical properties, that is, 20 standard amino acid types and gap. 
-* *AA* = 7 types : The case that residues are taken account of their stereochemical properties by classifing them into 7 types as follows [3]:
+* *AA* = 7 types : The case that residues are taken account of their stereochemical properties by classifying them into 7 types as follows [3]:
 
 	* Aliphatic = `{A, V, L, I, M, C}`
 	* Aromatic = `{F, W, Y, H}`
@@ -73,7 +73,7 @@ Major arguments:
 
 `-o` : Output filename, REQUIRED.
 
-`-m` :   Method of sequence weighting ( `hen` or `va`, default `hen` ). 
+`-m` : Method of sequence weighting ( `hen` or `va`, default `hen` ). 
 
 [e. g.]
 
